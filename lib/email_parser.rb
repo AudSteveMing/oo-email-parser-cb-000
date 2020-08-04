@@ -9,11 +9,14 @@
 # parser.parse
 # # => ["john@doe.com", "person@somewhere.org"]
 
+require "pry"
+
 class EmailAddressParser
 
   def initialize(email_addresses)
     parsed_emails = email_addresses.split(", ")
     parsed_emails
+    binding.pry
   end
 
   def parse
