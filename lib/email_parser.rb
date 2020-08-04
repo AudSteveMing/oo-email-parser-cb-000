@@ -19,7 +19,7 @@ class EmailAddressParser
   end
 
   def parse
-    parsed_emails = @emails.split(%r{,\s*})   # (, | )
+    parsed_emails = @emails.split(", "," ")   # (, | )
     parsed_emails
   end
 
