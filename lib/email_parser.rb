@@ -12,6 +12,7 @@
 class EmailAddressParser
 
   def initialize(email_addresses)
+    email_addresses.split(", ")
   end
 
   def parse
