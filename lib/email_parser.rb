@@ -14,12 +14,13 @@ require "pry"
 class EmailAddressParser
 
   def initialize(email_addresses)
-    parsed_emails = email_addresses.split(", ")
-    parsed_emails
+    @emails = email_addresses
     # binding.pry
   end
 
   def parse
+    @parsed_emails = @emails.split(", ")
+    @parsed_emails
   end
 
 end
