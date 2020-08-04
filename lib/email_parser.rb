@@ -20,7 +20,7 @@ class EmailAddressParser
 
   def parse
     parsed_emails = @emails.split(/ |, /)   # (, | ) /[;, ]/
-    parsed_emails.collect { |i| parsed_emails.find_all(i).length < 2}
+parsed_emails.uniq
 
     # (1..10).find_all { |i|  i % 3 == 0 }   #=> [3, 6, 9]
     #
